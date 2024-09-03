@@ -1,0 +1,4 @@
+./logs/automation-2024-09-02 21:06:03.972 [main] INFO  testCases.LoginTest - ****Starting loginSuccessful****
+./logs/automation-2024-09-02 21:06:03.986 [main] INFO  testCases.LoginTest - ****Entening the credentials****
+./logs/automation-2024-09-02 21:06:05.944 [main] INFO  testCases.LoginTest - ****Checking Validations****
+./logs/automation-2024-09-02 21:06:05.955 [main] INFO  testCases.LoginTest - ****Ending loginSuccessful****
