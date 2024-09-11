@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: testCases.LoginTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 0.651 s <<< FAILURE! - in testCases.LoginTest
-testCases.LoginTest.setup  Time elapsed: 0.443 s  <<< FAILURE!
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 0.767 s <<< FAILURE! - in testCases.LoginTest
+testCases.LoginTest.setup  Time elapsed: 0.525 s  <<< FAILURE!
 org.testng.TestNGException: 
 
 Parameter 'OS' is required by BeforeClass on method setup but has not been marked @Optional or defined

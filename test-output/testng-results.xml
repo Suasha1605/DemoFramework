@@ -1,43 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-02T21:05:56 IST" name="Suite" finished-at="2024-09-02T21:06:06 IST" duration-ms="9668">
+  <suite started-at="2024-09-11T11:23:01 IST" name="Default suite" finished-at="2024-09-11T11:23:45 IST" duration-ms="44157">
     <groups>
-      <group name="Regression">
-        <method signature="LoginTest.loginSuccessful()[pri:0, instance:testCases.LoginTest@28261e8e]" name="loginSuccessful" class="testCases.LoginTest"/>
-      </group> <!-- Regression -->
-      <group name="Smoke">
-        <method signature="LoginTest.loginSuccessful()[pri:0, instance:testCases.LoginTest@28261e8e]" name="loginSuccessful" class="testCases.LoginTest"/>
-      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-09-02T21:05:56 IST" name="Test" finished-at="2024-09-02T21:06:06 IST" duration-ms="9668">
-      <class name="testCases.LoginTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginTest@28261e8e]" started-at="2024-09-02T21:05:56 IST" name="setup" finished-at="2024-09-02T21:06:03 IST" duration-ms="7275" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2024-09-11T11:23:01 IST" name="Default test" finished-at="2024-09-11T11:23:45 IST" duration-ms="44157">
+      <class name="practice.BrokenLink">
+        <test-method signature="testBrokenLinks()[pri:0, instance:practice.BrokenLink@5a45133e]" started-at="2024-09-11T11:23:01 IST" name="testBrokenLinks" finished-at="2024-09-11T11:23:45 IST" duration-ms="44089" status="FAIL">
+          <exception class="java.net.UnknownHostException">
+            <message>
+              <![CDATA[businesstravel.about.com]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.net.UnknownHostException: businesstravel.about.com
+at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567)
+at java.base/java.net.Socket.connect(Socket.java:633)
+at java.base/java.net.Socket.connect(Socket.java:583)
+at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183)
+at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:279)
+at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:384)
+at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:406)
+at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309)
+at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
+at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057)
+at practice.BrokenLink.testBrokenLinks(BrokenLink.java:55)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.net.UnknownHostException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="loginSuccessful()[pri:0, instance:testCases.LoginTest@28261e8e]" started-at="2024-09-02T21:06:03 IST" name="loginSuccessful" finished-at="2024-09-02T21:06:05 IST" duration-ms="1990" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginSuccessful -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:testCases.LoginTest@28261e8e]" started-at="2024-09-02T21:06:05 IST" name="logout" finished-at="2024-09-02T21:06:06 IST" duration-ms="348" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-      </class> <!-- testCases.LoginTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- testBrokenLinks -->
+      </class> <!-- practice.BrokenLink -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
